@@ -37,10 +37,6 @@ function addTodo() {
 function okdel(e) {
   const item = e.target;
 
-  function playAudio(url) {
-    new Audio(url).play();
-  }
-
   // check
   if (item.classList[0] === "check-button") {
     const todolist = item.parentElement;
